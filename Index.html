@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - Blueberry Autofiller</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #2dd4bf;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .date {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-top: 28px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    .highlight-box {
+      background: rgba(45, 212, 191, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+
+    code {
+      background: #0b1120;
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      font-family: monospace;
+    }
+
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="badge">Seguridad & Privacidad</div>
+    <h1>Política de Privacidad</h1>
+    <div class="date">Blueberry Autofiller · Última actualización: Septiembre de 2026</div>
+
+    <p>En <strong>Blueberry Autofiller</strong>, la confidencialidad de la información y la protección de datos constituyen una prioridad esencial, especialmente en entornos asistenciales y clínicos. Esta Política de Privacidad describe de manera transparente el funcionamiento de la extensión y certifica nuestro compromiso con la <strong>no recopilación</strong> de datos personales ni de salud.</p>
+
+    <h2>1. Principio de Operación Local (Sin Servidores Externos)</h2>
+    <div class="highlight-box">
+      <strong>Privacidad por diseño:</strong> La extensión no recopila, no transmite, no almacena ni comparte ningún dato de pacientes, diagnósticos, paraclínicos o evoluciones médicas.
+    </div>
+    <ul>
+      <li><strong>Ejecución local:</strong> Todas las funciones de autocompletado, lectura de paraclínicos y expansión de atajos ocurren exclusivamente en la memoria del navegador del usuario.</li>
+      <li><strong>Sin backend propio:</strong> Blueberry Autofiller no dispone de servidores de base de datos ni recopila registros de actividad o telemetría.</li>
+      <li><strong>Conformidad legal:</strong> El diseño respeta la reserva legal de la historia clínica en Colombia (Ley 23 de 1981, Ley 1581 de 2012 y Resolución 1995 de 1999).</li>
+    </ul>
+
+    <h2>2. Datos Técnicos Almacenados Localmente</h2>
+    <p>La extensión únicamente almacena configuraciones funcionales en el almacenamiento del navegador (<code>chrome.storage.local</code>):</p>
+    <ul>
+      <li><strong>Plantillas personalizadas:</strong> Los esquemas de texto configurados por el usuario para agilizar notas clínicas.</li>
+      <li><strong>Atajos de texto (Snippets):</strong> Los códigos y fragmentos definidos para expansión automática.</li>
+      <li><strong>Preferencias del usuario:</strong> Tema visual (claro/oscuro), filtros de analitos y rangos vitales por defecto.</li>
+      <li><strong>NIT Institucional:</strong> El número de identificación configurado para autocompletar formularios de transcripción.</li>
+    </ul>
+    <p><em>Estos datos nunca abandonan su navegador y se borran permanentemente si desinstala la extensión.</em></p>
+
+    <h2>3. Gestión de Suscripciones y Pagos</h2>
+    <p>La verificación de licencias y periodos de prueba se gestiona mediante el servicio <strong>ExtensionPay</strong> y la pasarela bancaria <strong>Stripe</strong>:</p>
+    <ul>
+      <li>El pago se efectúa directamente en los servidores protegidos de Stripe bajo estándares PCI-DSS.</li>
+      <li>Blueberry Autofiller <strong>no almacena ni tiene acceso</strong> a números de tarjeta, cuentas bancarias ni credenciales financieras.</li>
+      <li>La extensión únicamente consulta un estado binario (<code>paid: true/false</code> o periodo de prueba activo) asociado a un identificador anónimo de usuario.</li>
+    </ul>
+
+    <h2>4. Permisos Solicitados en el Navegador</h2>
+    <ul>
+      <li><code>storage</code>: Permite guardar localmente las plantillas y preferencias.</li>
+      <li><code>activeTab</code> y <code>scripting</code>: Permite transferir el texto estructurado a los campos de formulario cuando el usuario pulsa el botón correspondiente.</li>
+      <li><code>clipboardWrite</code>: Utilizado exclusivamente para copiar al portapapeles la tabla filtrada de paraclínicos a petición voluntaria del usuario.</li>
+      <li><code>host_permissions</code>: Delimita la ejecución de los asistentes únicamente a los dominios autorizados de trabajo.</li>
+    </ul>
+
+    <h2>5. Descargo de Responsabilidad Clínica</h2>
+    <p>Blueberry Autofiller es un software complementario de automatización de interfaz de usuario (UI). No constituye un dispositivo médico, ni un sistema de soporte a decisiones clínicas (CDSS), ni reemplaza el criterio ni la valoración profesional.</p>
+    <p>El diligenciamiento y la veracidad de la historia clínica es un acto profesional indelegable. El usuario es el único responsable de revisar, validar y firmar toda información consignada en las plataformas médicas institucionales.</p>
+
+    <h2>6. Contacto y Soporte</h2>
+    <p>Para dudas, consultas sobre el funcionamiento técnico o asistencia, puede contactar al desarrollador en:</p>
+    <p>📧 <strong>Soporte:</strong> <a href="mailto:soporte@blueberryautofiller.com" style="color: var(--primary);">soporte@blueberryautofiller.com</a></p>
+
+    <footer>
+      © 2026 Blueberry Autofiller. Todos los derechos reservados.
+    </footer>
+  </div>
+
+</body>
+</html>
