@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad - Blueberry Autofiller</title>
+  <title>Política de tratamiento de datos personales - Blueberry Autofiller</title>
   <style>
     :root {
       --bg: #0f172a;
@@ -116,6 +116,16 @@
       font-family: monospace;
     }
 
+    table { width:100%; border-collapse:collapse; margin:8px 0 18px; font-size:0.9rem; }
+    th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--border); color:#cbd5e1; }
+    th { color:#fff; font-weight:600; }
+    nav.docs { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+    nav.docs a { color:var(--primary); font-size:0.88rem; text-decoration:none; border:1px solid var(--border); padding:4px 10px; border-radius:20px; }
+    nav.docs a.on { background:rgba(56,189,248,0.12); }
+    a { color: var(--primary); }
+    h3 { font-size:1.02rem; color:#fff; margin:20px 0 8px; }
+    @media (max-width:600px){ .container{ padding:24px 18px; } body{ padding:16px; } table{ font-size:0.82rem; } }
+
     footer {
       margin-top: 40px;
       border-top: 1px solid var(--border);
@@ -127,62 +137,89 @@
   </style>
 </head>
 <body>
-
   <div class="container">
-    <div class="badge">Seguridad & Privacidad</div>
-    <h1>Política de Privacidad</h1>
-    <div class="date">Blueberry Autofiller · Última actualización: Septiembre de 2026</div>
+    <div class="badge">Privacidad</div>
+    <h1>Política de tratamiento de datos personales</h1>
+    <div class="date">Blueberry Autofiller · Versión 1 · Vigente desde el 25 de octubre de 2026</div>
+    <nav class="docs"><a href="./" class="on">Política de datos personales</a><a href="terminos.html" class="">Términos y condiciones</a></nav>
 
-    <p>En <strong>Blueberry Autofiller</strong>, la confidencialidad de la información y la protección de datos constituyen una prioridad esencial, especialmente en entornos asistenciales y clínicos. Esta Política de Privacidad describe de manera transparente el funcionamiento de la extensión y certifica nuestro compromiso con la <strong>no recopilación</strong> de datos personales ni de salud.</p>
+    <p>Esta política explica qué datos trata <strong>Blueberry Autofiller</strong> («Blueberry»), para qué y cómo puedes ejercer tus derechos. Se rige por la Ley 1581 de 2012 y el Decreto 1377 de 2013 (compilado en el Decreto 1074 de 2015).</p>
 
-    <h2>1. Principio de Operación Local (Sin Servidores Externos)</h2>
-    <div class="highlight-box">
-      <strong>Privacidad por diseño:</strong> La extensión no recopila, no transmite, no almacena ni comparte ningún dato de pacientes, diagnósticos, paraclínicos o evoluciones médicas.
-    </div>
+    <h2>1. Responsable del tratamiento</h2>
+    <p><strong>Blueberry Autofiller</strong>, con domicilio en Medellín, Colombia. Correo para todo lo relacionado con datos personales: <a href="mailto:blueberrysoporte@gmail.com">blueberrysoporte@gmail.com</a>.</p>
+
+    <h2>2. Datos de pacientes</h2>
+    <div class="highlight-box"><strong>Blueberry no recoge, no envía y no guarda en sus servidores datos de pacientes, diagnósticos, resultados ni notas médicas.</strong></div>
     <ul>
-      <li><strong>Ejecución local:</strong> Todas las funciones de autocompletado, lectura de paraclínicos y expansión de atajos ocurren exclusivamente en la memoria del navegador del usuario.</li>
-      <li><strong>Sin backend propio:</strong> Blueberry Autofiller no dispone de servidores de base de datos ni recopila registros de actividad o telemetría.</li>
-      <li><strong>Conformidad legal:</strong> El diseño respeta la reserva legal de la historia clínica en Colombia (Ley 23 de 1981, Ley 1581 de 2012 y Resolución 1995 de 1999).</li>
+      <li>Para llenar campos, Blueberry lee la página abierta (por ejemplo sexo, edad y diagnósticos) solo en la memoria del navegador del profesional.</li>
+      <li><strong>Única excepción:</strong> cuando el profesional pide tamizajes, su computador guarda hasta por 3 horas el tipo y número de documento del paciente y los exámenes elegidos, para cargarlos en la plataforma de órdenes. Luego se borran. Nunca salen del computador.</li>
+      <li>La copia de resultados de paraclínicos va al portapapeles solo cuando el profesional la pide.</li>
+    </ul>
+    <p>El manejo de la historia clínica sigue a cargo del profesional y de su institución, según la Ley 23 de 1981 y la Resolución 1995 de 1999.</p>
+
+    <h2>3. Datos del usuario que trata Blueberry</h2>
+    <table>
+      <tr><th>Dato</th><th>Para qué</th><th>Dónde queda</th></tr>
+      <tr><td>Correo de la cuenta de Google</td><td>Identificar la cuenta, la prueba y la suscripción</td><td>Servidor de Blueberry (Google Apps Script y Hojas de cálculo)</td></tr>
+      <tr><td>Estado de la prueba o suscripción y sus fechas</td><td>Saber si Blueberry debe funcionar</td><td>Servidor de Blueberry</td></tr>
+      <tr><td>Identificador aleatorio del computador y última fecha de uso</td><td>Permitir un computador a la vez</td><td>Servidor y computador del usuario</td></tr>
+      <tr><td>Número de suscripción de Mercado Pago, estado y fecha del próximo cobro</td><td>Activar, cancelar y renovar</td><td>Servidor de Blueberry</td></tr>
+      <tr><td>Cobros: fecha, valor, comisión y estado</td><td>Contabilidad, impuestos y reembolsos</td><td>Servidor de Blueberry</td></tr>
+      <tr><td>Versión de los términos aceptada y fecha</td><td>Probar la autorización</td><td>Servidor de Blueberry</td></tr>
+      <tr><td>Correos enviados a soporte</td><td>Atender solicitudes</td><td>Correo de soporte</td></tr>
+      <tr><td>Plantillas, códigos rápidos y preferencias</td><td>Que Blueberry funcione como el usuario lo configuró</td><td>Computador del usuario y su propia cuenta de Google (sincronización de Chrome). Blueberry no tiene acceso a esa copia</td></tr>
+    </table>
+    <p>Blueberry <strong>no</strong> recibe datos de tarjetas ni de cuentas bancarias: los maneja Mercado Pago. No usa cookies, publicidad ni herramientas de analítica.</p>
+
+    <h2>4. Finalidades</h2>
+    <p>Los datos se usan solo para: prestar el servicio y verificar la licencia; gestionar la prueba, la suscripción, los cobros, las cancelaciones y los reembolsos; atender soporte y reclamos; cumplir obligaciones contables y tributarias; y prevenir el uso indebido de cuentas. Los datos no se venden ni se ceden para fines comerciales.</p>
+
+    <h2>5. Con quién se comparten</h2>
+    <ul>
+      <li><strong>Google LLC:</strong> inicio de sesión con Google y servidores donde funciona Blueberry (Apps Script, Hojas de cálculo y Gmail). Sus servidores pueden estar fuera de Colombia; Google actúa como encargado del tratamiento.</li>
+      <li><strong>Mercado Pago:</strong> procesa los pagos y suscripciones bajo sus propias políticas.</li>
+      <li><strong>Autoridades:</strong> solo cuando una norma o una orden lo exija.</li>
     </ul>
 
-    <h2>2. Datos Técnicos Almacenados Localmente</h2>
-    <p>La extensión únicamente almacena configuraciones funcionales en el almacenamiento del navegador (<code>chrome.storage.local</code>):</p>
-    <ul>
-      <li><strong>Plantillas personalizadas:</strong> Los esquemas de texto configurados por el usuario para agilizar notas clínicas.</li>
-      <li><strong>Atajos de texto (Snippets):</strong> Los códigos y fragmentos definidos para expansión automática.</li>
-      <li><strong>Preferencias del usuario:</strong> Tema visual (claro/oscuro), filtros de analitos y rangos vitales por defecto.</li>
-      <li><strong>NIT Institucional:</strong> El número de identificación configurado para autocompletar formularios de transcripción.</li>
-    </ul>
-    <p><em>Estos datos nunca abandonan su navegador y se borran permanentemente si desinstala la extensión.</em></p>
+    <h2>6. Conservación</h2>
+    <p>Los datos de la cuenta se conservan mientras exista la cuenta. Si el usuario pide eliminarla, se borran, excepto los registros de cobros, que se guardan el tiempo que exija la ley para soportes contables (hasta 10 años).</p>
 
-    <h2>3. Gestión de Suscripciones y Pagos</h2>
-    <p>La verificación de licencias y periodos de prueba se gestiona mediante el servicio <strong>ExtensionPay</strong> y la pasarela bancaria <strong>Stripe</strong>:</p>
+    <h2>7. Derechos del titular</h2>
+    <p>El usuario puede, de forma gratuita:</p>
     <ul>
-      <li>El pago se efectúa directamente en los servidores protegidos de Stripe bajo estándares PCI-DSS.</li>
-      <li>Blueberry Autofiller <strong>no almacena ni tiene acceso</strong> a números de tarjeta, cuentas bancarias ni credenciales financieras.</li>
-      <li>La extensión únicamente consulta un estado binario (<code>paid: true/false</code> o periodo de prueba activo) asociado a un identificador anónimo de usuario.</li>
+      <li>Conocer, actualizar y rectificar sus datos.</li>
+      <li>Pedir prueba de la autorización que dio.</li>
+      <li>Saber cómo se han usado sus datos.</li>
+      <li>Revocar la autorización o pedir que se supriman sus datos, salvo que exista un deber legal de conservarlos.</li>
+      <li>Presentar quejas ante la Superintendencia de Industria y Comercio, después de acudir primero a Blueberry.</li>
     </ul>
 
-    <h2>4. Permisos Solicitados en el Navegador</h2>
-    <ul>
-      <li><code>storage</code>: Permite guardar localmente las plantillas y preferencias.</li>
-      <li><code>activeTab</code> y <code>scripting</code>: Permite transferir el texto estructurado a los campos de formulario cuando el usuario pulsa el botón correspondiente.</li>
-      <li><code>clipboardWrite</code>: Utilizado exclusivamente para copiar al portapapeles la tabla filtrada de paraclínicos a petición voluntaria del usuario.</li>
-      <li><code>host_permissions</code>: Delimita la ejecución de los asistentes únicamente a los dominios autorizados de trabajo.</li>
-    </ul>
+    <h2>8. Cómo ejercerlos</h2>
+    <p>Escribiendo a <a href="mailto:blueberrysoporte@gmail.com">blueberrysoporte@gmail.com</a> desde el correo de la cuenta, o indicando ese correo. Las consultas se responden en máximo 10 días hábiles y los reclamos en máximo 15 días hábiles, según los artículos 14 y 15 de la Ley 1581 de 2012. Si se necesita más tiempo, se avisará el motivo.</p>
 
-    <h2>5. Descargo de Responsabilidad Clínica</h2>
-    <p>Blueberry Autofiller es un software complementario de automatización de interfaz de usuario (UI). No constituye un dispositivo médico, ni un sistema de soporte a decisiones clínicas (CDSS), ni reemplaza el criterio ni la valoración profesional.</p>
-    <p>El diligenciamiento y la veracidad de la historia clínica es un acto profesional indelegable. El usuario es el único responsable de revisar, validar y firmar toda información consignada en las plataformas médicas institucionales.</p>
+    <h2>9. Seguridad</h2>
+    <p>Cada consulta al servidor se verifica con Google. El acceso a la hoja de licencias es restringido. Blueberry no guarda contraseñas ni datos de pago.</p>
 
-    <h2>6. Contacto y Soporte</h2>
-    <p>Para dudas, consultas sobre el funcionamiento técnico o asistencia, puede contactar al desarrollador en:</p>
-    <p>📧 <strong>Soporte:</strong> <a href="mailto:blueberrysoporte@gmail.com" style="color: var(--primary);">blueberrysoporte@gmail.com</a></p>
+    <h2>10. Permisos de la extensión</h2>
+    <table>
+      <tr><th>Permiso</th><th>Para qué</th></tr>
+      <tr><td><code>identity</code></td><td>Iniciar sesión con la cuenta de Google</td></tr>
+      <tr><td><code>storage</code></td><td>Guardar plantillas, códigos y preferencias</td></tr>
+      <tr><td><code>alarms</code></td><td>Revisar la licencia una vez al día</td></tr>
+      <tr><td><code>scripting</code>, <code>activeTab</code>, <code>tabs</code></td><td>Llenar los campos de la página abierta cuando el usuario lo pide</td></tr>
+      <tr><td><code>windows</code></td><td>Recuperar la plataforma abierta en ventanas emergentes y abrir minimizada la ventana de órdenes para cargar tamizajes</td></tr>
+      <tr><td><code>clipboardWrite</code></td><td>Copiar resultados de paraclínicos a pedido del usuario</td></tr>
+      <tr><td>Acceso a suramericana.com</td><td>Funcionar solo en las plataformas compatibles</td></tr>
+      <tr><td>Acceso a script.google.com y googleapis.com</td><td>Consultar la licencia y verificar la cuenta</td></tr>
+    </table>
 
-    <footer>
-      © 2026 Blueberry Autofiller. Todos los derechos reservados.
-    </footer>
+    <h2>11. Menores de edad</h2>
+    <p>Blueberry no está dirigido a menores de edad y no recoge datos de menores como usuarios.</p>
+
+    <h2>12. Vigencia y cambios</h2>
+    <p>Esta política rige desde su publicación. Si cambia, se publicará la nueva versión con su fecha y Blueberry pedirá aceptarla de nuevo.</p>
+
+    <footer>© 2026 Blueberry Autofiller · <a href="mailto:blueberrysoporte@gmail.com">blueberrysoporte@gmail.com</a> · Medellín, Colombia</footer>
   </div>
-
 </body>
 </html>
